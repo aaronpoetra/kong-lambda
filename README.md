@@ -1,8 +1,8 @@
-## Create API Gateway using Kong and AWS Lambda
+# Create API Gateway using Kong and AWS Lambda
 
 ---
 
-In this example, We will create a simple API Gateway using Kong and AWS Lambda.
+In this example, We will create a simple API Gateway using Kong and AWS Lambda. Each request need a valid JWT Token.
 
 ---
 
@@ -13,3 +13,7 @@ In this example, We will create a simple API Gateway using Kong and AWS Lambda.
 
 ## Architecture
 [![Kong Lambda Architecture](./diagrams/arch.png "Kong Lambda Architecture")]()
+
+## Getting Started
+
+Please refer to ``sam/`` and ``kong/`` folders for each dedicated tutorial and explanation on the ``README.md``
