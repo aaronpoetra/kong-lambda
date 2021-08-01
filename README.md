@@ -16,4 +16,4 @@ In this example, We will create a simple API Gateway using Kong and AWS Lambda. 
 
 ## Getting Started
 
-Please refer to ``sam/`` and ``kong/`` folders for each dedicated tutorial and explanation on the ``README.md``
+Please refer to ``sam/`` and ``kong/`` folders for each dedicated tutorial and explanation ``README.md``
