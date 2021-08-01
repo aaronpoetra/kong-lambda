@@ -1,0 +1,513 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2021-08-01T08:00:31.943Z",
+    "__export_source": "insomnia.desktop.app:v2021.4.1",
+    "resources": [
+        {
+            "_id": "req_2a500444d9c543c285f5aac9bc9b3647",
+            "parentId": "fld_90c8bf20c6b3468aa8e8904982f2878a",
+            "modified": 1627804791303,
+            "created": 1627721236811,
+            "url": "http://localhost:8000/lambda/users",
+            "name": "(GET) Invoke Kong Lambda",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIycXFBTGcyc3lIUHMzMEtqaWwzVU9xUFBIOGRKOWx3NCJ9.MMTFBLlwQFpm-0BJcrhkZ4VhtHqI2AQIeTjp-2pjmRAbHhlmNupuQu6V6V2zsG89",
+                "disabled": true
+            },
+            "metaSortKey": -1627721236877,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_90c8bf20c6b3468aa8e8904982f2878a",
+            "parentId": "wrk_a612f8f2a1a14977ae044d5a9969fd29",
+            "modified": 1627720664272,
+            "created": 1627720664272,
+            "name": "Kong Lambda",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1627720664273,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_a612f8f2a1a14977ae044d5a9969fd29",
+            "parentId": null,
+            "modified": 1627710947060,
+            "created": 1627710947060,
+            "name": "Kong API",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_d4aa64ed34da420db5c2931bd3db0034",
+            "parentId": "fld_90c8bf20c6b3468aa8e8904982f2878a",
+            "modified": 1627804787593,
+            "created": 1627725791037,
+            "url": "http://localhost:8000/lambda/user",
+            "name": "(POST) Invoke Kong Lambda",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"username\": \"aaron\",\n\t\"gender\": \"male\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_5d605200de754d8a9be8c8ab16be6746"
+                }
+            ],
+            "authentication": {
+                "type": "bearer",
+                "token": "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIycXFBTGcyc3lIUHMzMEtqaWwzVU9xUFBIOGRKOWx3NCJ9.MMTFBLlwQFpm-0BJcrhkZ4VhtHqI2AQIeTjp-2pjmRAbHhlmNupuQu6V6V2zsG89",
+                "disabled": false
+            },
+            "metaSortKey": -1627721197048.75,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_45e6f084c0fd4e2980bf16f5e61a873c",
+            "parentId": "fld_90c8bf20c6b3468aa8e8904982f2878a",
+            "modified": 1627724661975,
+            "created": 1627724517565,
+            "url": "http://localhost:8001/consumers/lambda-user/jwt",
+            "name": "Create JWT Auth Credential",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "multipart/form-data",
+                "params": [
+                    {
+                        "id": "pair_3b95b7bc1f9b4722839666e2600010cf",
+                        "name": "secret",
+                        "value": "heibenerth26",
+                        "description": "",
+                        "disabled": false
+                    },
+                    {
+                        "id": "pair_ec659f6c3c3a4e6faea723432fcaae74",
+                        "name": "algorithm",
+                        "value": "HS384",
+                        "description": ""
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data",
+                    "id": "pair_0e1fa777baf24f239e47ffff016afd6b"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1627721117392.25,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_eb7cf7e2987e4d4696fe3ce024742416",
+            "parentId": "fld_90c8bf20c6b3468aa8e8904982f2878a",
+            "modified": 1627733592670,
+            "created": 1627724367118,
+            "url": "http://localhost:8001/routes/kong-lambda-get/plugins/",
+            "name": "Add JWT Plugins to Route",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "multipart/form-data",
+                "params": [
+                    {
+                        "id": "pair_be13335ad24344f69ede0bb533debe7b",
+                        "name": "name",
+                        "value": "jwt",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_d18fec391cd841ffa16a27656181ba7d",
+                        "name": "config.secret_is_base64",
+                        "value": "false",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_fe0269e5570941a4a8d956804b351420",
+                        "name": "config.run_on_preflight",
+                        "value": "true",
+                        "description": ""
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data",
+                    "id": "pair_a857d335472042db8d2a2063bdf7615a"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1627721037735.75,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_5b2ecdccfd9e4ac8b107a2ab04f8f864",
+            "parentId": "fld_90c8bf20c6b3468aa8e8904982f2878a",
+            "modified": 1627721956962,
+            "created": 1627721931728,
+            "url": "http://localhost:8001/consumers/",
+            "name": "Create Kong Consumer",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "multipart/form-data",
+                "params": [
+                    {
+                        "id": "pair_44a84440ac0e44ba95a5ff017e81239d",
+                        "name": "username",
+                        "value": "lambda-user",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_004a5ecfac524a44bce1e2dc9510be59",
+                        "name": "custom_id",
+                        "value": "999",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_d01ed1259c2b4632bf228c61611a33d5",
+                        "name": "",
+                        "value": "",
+                        "description": ""
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data",
+                    "id": "pair_7a2bb179753a4f98b15b03643464301d"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1627720997907.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_07ccf43465c54f9592bc0121d61ea4a8",
+            "parentId": "fld_90c8bf20c6b3468aa8e8904982f2878a",
+            "modified": 1627799671620,
+            "created": 1627720918251,
+            "url": "http://localhost:8001/routes/kong-lambda-get/plugins",
+            "name": "Add Kong Lambda Plugin to GET Route",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "multipart/form-data",
+                "params": [
+                    {
+                        "id": "pair_aab395cb3be4449eb5775bcdf044bcd1",
+                        "name": "name",
+                        "value": "aws-lambda",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_b8ec56616ab54aa69e5af53af13fe714",
+                        "name": "config.aws_key",
+                        "value": "",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_5970962a030b43c1a07518ebbd6714e0",
+                        "name": "config.aws_secret",
+                        "value": "",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_c71ac28746c747ed8a44eb05e417d972",
+                        "name": "config.aws_region",
+                        "value": "",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_471e2b0c0e434310ba5be7c02859a7c7",
+                        "name": "config.function_name",
+                        "value": "",
+                        "description": ""
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data",
+                    "id": "pair_9d0b7d0790ae46269dcbfb0ad43ecf59"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1627720918251,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_9135ed78b1cd452382abd6a3455bdfd5",
+            "parentId": "fld_90c8bf20c6b3468aa8e8904982f2878a",
+            "modified": 1627799689929,
+            "created": 1627799679156,
+            "url": "http://localhost:8001/routes/kong-lambda-post/plugins",
+            "name": "Add Kong Lambda Plugin to POST Route",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "multipart/form-data",
+                "params": [
+                    {
+                        "id": "pair_aab395cb3be4449eb5775bcdf044bcd1",
+                        "name": "name",
+                        "value": "aws-lambda",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_b8ec56616ab54aa69e5af53af13fe714",
+                        "name": "config.aws_key",
+                        "value": "",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_5970962a030b43c1a07518ebbd6714e0",
+                        "name": "config.aws_secret",
+                        "value": "",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_c71ac28746c747ed8a44eb05e417d972",
+                        "name": "config.aws_region",
+                        "value": "",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_471e2b0c0e434310ba5be7c02859a7c7",
+                        "name": "config.function_name",
+                        "value": "",
+                        "description": ""
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data",
+                    "id": "pair_9d0b7d0790ae46269dcbfb0ad43ecf59"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1627720840410,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_37f0ebda618a4aa08b00e3244770d4df",
+            "parentId": "fld_90c8bf20c6b3468aa8e8904982f2878a",
+            "modified": 1627804802288,
+            "created": 1627720762569,
+            "url": "http://localhost:8001/routes/",
+            "name": "Create Kong POST Lambda Route",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "multipart/form-data",
+                "params": [
+                    {
+                        "id": "pair_58391e5077d64d128a760791bdba3f98",
+                        "name": "name",
+                        "value": "kong-lambda-post",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_bd125b5f69ff45b7aef9020d07fd187f",
+                        "name": "paths[]",
+                        "value": "/lambda/user",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_7f4d9a551d784e698fbfa6fa8f7f4cd4",
+                        "name": "methods[]",
+                        "value": "POST",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_0b2566f229e34a4eb5206cd28ece023e",
+                        "name": "",
+                        "value": "",
+                        "description": ""
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data",
+                    "id": "pair_ad39eeba9d3f4e1ba462d77c8b43cbc4"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1627720762569,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_660172b23d91465f9dab2d4371939928",
+            "parentId": "fld_90c8bf20c6b3468aa8e8904982f2878a",
+            "modified": 1627804798371,
+            "created": 1627799622797,
+            "url": "http://localhost:8001/routes/",
+            "name": "Create Kong GET Lambda Route",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "multipart/form-data",
+                "params": [
+                    {
+                        "id": "pair_58391e5077d64d128a760791bdba3f98",
+                        "name": "name",
+                        "value": "kong-lambda-get",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_bd125b5f69ff45b7aef9020d07fd187f",
+                        "name": "paths[]",
+                        "value": "/lambda/users",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_7f4d9a551d784e698fbfa6fa8f7f4cd4",
+                        "name": "methods[]",
+                        "value": "GET",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_0b2566f229e34a4eb5206cd28ece023e",
+                        "name": "",
+                        "value": "",
+                        "description": ""
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data",
+                    "id": "pair_ad39eeba9d3f4e1ba462d77c8b43cbc4"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1627636170731.5,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_70a268086e7c536a62f57c50a229acb9a2813940",
+            "parentId": "wrk_a612f8f2a1a14977ae044d5a9969fd29",
+            "modified": 1627710947393,
+            "created": 1627710947393,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1627710947393,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_70a268086e7c536a62f57c50a229acb9a2813940",
+            "parentId": "wrk_a612f8f2a1a14977ae044d5a9969fd29",
+            "modified": 1627710947401,
+            "created": 1627710947401,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_af9cf52116ac4ccd9b20c4eb27e7fea4",
+            "parentId": "wrk_a612f8f2a1a14977ae044d5a9969fd29",
+            "modified": 1627710947075,
+            "created": 1627710947075,
+            "fileName": "Kong API",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        }
+    ]
+}
