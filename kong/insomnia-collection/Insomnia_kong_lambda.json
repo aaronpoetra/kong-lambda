@@ -1,7 +1,7 @@
 {
     "_type": "export",
     "__export_format": 4,
-    "__export_date": "2021-08-01T08:00:31.943Z",
+    "__export_date": "2021-08-01T08:10:22.491Z",
     "__export_source": "insomnia.desktop.app:v2021.4.1",
     "resources": [
         {
@@ -138,10 +138,10 @@
         {
             "_id": "req_eb7cf7e2987e4d4696fe3ce024742416",
             "parentId": "fld_90c8bf20c6b3468aa8e8904982f2878a",
-            "modified": 1627733592670,
+            "modified": 1627805391612,
             "created": 1627724367118,
             "url": "http://localhost:8001/routes/kong-lambda-get/plugins/",
-            "name": "Add JWT Plugins to Route",
+            "name": "Add JWT Plugins to GET Route",
             "description": "",
             "method": "POST",
             "body": {
@@ -177,6 +177,57 @@
             ],
             "authentication": {},
             "metaSortKey": -1627721037735.75,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_706daa44ad73499388e3a6f474f752b1",
+            "parentId": "fld_90c8bf20c6b3468aa8e8904982f2878a",
+            "modified": 1627805403229,
+            "created": 1627805398939,
+            "url": "http://localhost:8001/routes/kong-lambda-post/plugins/",
+            "name": "Add JWT Plugins to POST Route",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "multipart/form-data",
+                "params": [
+                    {
+                        "id": "pair_be13335ad24344f69ede0bb533debe7b",
+                        "name": "name",
+                        "value": "jwt",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_d18fec391cd841ffa16a27656181ba7d",
+                        "name": "config.secret_is_base64",
+                        "value": "false",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_fe0269e5570941a4a8d956804b351420",
+                        "name": "config.run_on_preflight",
+                        "value": "true",
+                        "description": ""
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data",
+                    "id": "pair_a857d335472042db8d2a2063bdf7615a"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1627721017821.625,
             "isPrivate": false,
             "settingStoreCookies": true,
             "settingSendCookies": true,
