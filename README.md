@@ -6,6 +6,8 @@ In this example, We will create a simple **API Gateway** using **Kong**, authent
 
 ---
 
+*⚠️ Lambdas are currently not saving data to DB. This example only shows us how to integrate all the components. A fully working with DB will be added soon*
+
 ## Components explanation:
 - [Kong](https://konghq.com/) is a cloud-native, platform-agnostic, scalable API Gateway distinguished for its high performance and extensibility via plugins. Build on top NGINX and Openresty.
 
