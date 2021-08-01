@@ -1,0 +1,54 @@
+{
+  "pathParameters": {},
+  "queryStringParameters": {},
+  "multiValueQueryStringParameters": {},
+  "resource": "/lambda/test",
+  "httpMethod": "POST",
+  "headers": {
+    "accept": "*/*",
+    "user-agent": "insomnia/2021.4.1",
+    "x-consumer-custom-id": "999",
+    "x-consumer-username": "lambda-user",
+    "x-credential-identifier": "2qqALg2syHPs30Kjil3UOqPPH8dJ9lw4",
+    "x-consumer-id": "bf18a3a3-bdeb-458b-b048-02855619b69c",
+    "content-length": "43",
+    "authorization": "Bearer eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIycXFBTGcyc3lIUHMzMEtqaWwzVU9xUFBIOGRKOWx3NCJ9.MMTFBLlwQFpm-0BJcrhkZ4VhtHqI2AQIeTjp-2pjmRAbHhlmNupuQu6V6V2zsG89",
+    "host": "localhost:8000",
+    "content-type": "application/json"
+  },
+  "isBase64Encoded": true,
+  "path": "/lambda/test",
+  "multiValueHeaders": {
+    "accept": [
+      "*/*"
+    ],
+    "x-consumer-id": [
+      "bf18a3a3-bdeb-458b-b048-02855619b69c"
+    ],
+    "x-consumer-custom-id": [
+      "999"
+    ],
+    "x-consumer-username": [
+      "lambda-user"
+    ],
+    "x-credential-identifier": [
+      "2qqALg2syHPs30Kjil3UOqPPH8dJ9lw4"
+    ],
+    "content-length": [
+      "43"
+    ],
+    "user-agent": [
+      "insomnia/2021.4.1"
+    ],
+    "authorization": [
+      "Bearer eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpc3MiOiIycXFBTGcyc3lIUHMzMEtqaWwzVU9xUFBIOGRKOWx3NCJ9.MMTFBLlwQFpm-0BJcrhkZ4VhtHqI2AQIeTjp-2pjmRAbHhlmNupuQu6V6V2zsG89"
+    ],
+    "host": [
+      "localhost:8000"
+    ],
+    "content-type": [
+      "application/json"
+    ]
+  },
+  "body": "ewoJInVzZXJuYW1lIjogImFhcm9uIiwKCSJnZW5kZXIiOiAibWFsZSIKfQ=="
+}
