@@ -2,7 +2,7 @@
   "pathParameters": {},
   "queryStringParameters": {},
   "multiValueQueryStringParameters": {},
-  "resource": "/lambda/test",
+  "resource": "/lambda/user",
   "httpMethod": "POST",
   "headers": {
     "accept": "*/*",
@@ -17,7 +17,7 @@
     "content-type": "application/json"
   },
   "isBase64Encoded": true,
-  "path": "/lambda/test",
+  "path": "/lambda/user",
   "multiValueHeaders": {
     "accept": [
       "*/*"
