@@ -8,7 +8,7 @@
 ---
 
 ## Folder Structure
-1. ``docker/`` folder contains ``docker-compose.yml`` file to provision ``kong`` and ``kong-database``
+1. ``docker/`` folder contains ``docker-compose.yaml`` file to provision ``kong`` and ``kong-database``
 
 2. ``insomnia-collection/`` folder contains a list of Kong REST API Endpoints to run this example
 
@@ -141,7 +141,7 @@
     - ``secret`` contains your private secret key
     - ``algorithm`` contains your chosen JWT encryption algorithm
 
-7. After providing configurations above, let's execute the request. The request will generate a random JWT token like ``key`` below:
+7. After providing configurations above, let's execute the request. The request will generate a random JWT key like ``key`` below:
     <details>
         <summary> Create JWT Credential Response </summary>
     <p>
