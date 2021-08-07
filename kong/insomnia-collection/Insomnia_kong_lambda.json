@@ -48,7 +48,7 @@
             "parentId": null,
             "modified": 1627710947060,
             "created": 1627710947060,
-            "name": "Kong API",
+            "name": "Kong Lambda Example",
             "description": "",
             "scope": "collection",
             "_type": "workspace"
@@ -555,7 +555,7 @@
             "parentId": "wrk_a612f8f2a1a14977ae044d5a9969fd29",
             "modified": 1627710947075,
             "created": 1627710947075,
-            "fileName": "Kong API",
+            "fileName": "Kong Lambda Example",
             "contents": "",
             "contentType": "yaml",
             "_type": "api_spec"

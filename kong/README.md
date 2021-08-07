@@ -13,5 +13,18 @@
 ---
 ## Getting Started
 
-1.
-2.
+1. Run ``docker-compose up`` using ``docker/docker-compose.yaml`` file based on your OS architecture. This will provision a Kong PostgreSQL database only (Notice the commented Kong service section)
+    ```shell
+        $ docker-compose -f docker/arm64/docker-compose.yaml up -d
+        # or
+        $ docker-compose -f docker/x86/docker-compose.yaml up -d
+    ```
+2. Run the migration ``migration.sh`` which will bootstrap Kong
+    ```shell
+        $ chmod +x docker/arm64/migration.sh && /bin/bash docker/arm64/migration.sh
+        # or
+        $ chmod +x docker/x86/migration.sh && /bin/bash docker/x86/migration.sh
+    ```
+3. Uncomment Kong service section and re-run step 1
+4. Navigate to Kong Admin API ``http://localhost:8001`` to check if Kong up and running
+5. Kong is ready to be used 🎉
