@@ -39,7 +39,9 @@
 3. After importing it, it will shows us many API requests like below:
 [![Imported Collection](../misc/insomnia-imported-collection.png "Imported Collection")]()
 
-### Configure Kong API Gateway using Kong REST APIs
+---
+
+## Configuring Kong API Gateway using Kong REST APIs
 1. Invoke ``Create Kong POST Lambda Route`` and ``Create Kong GET Lambda Route`` requests to create GET and POST routes. If successfully executed, the response will be:
     <details>
         <summary>GET Route Response</summary>
