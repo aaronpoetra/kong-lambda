@@ -329,6 +329,12 @@
                         "name": "config.function_name",
                         "value": "",
                         "description": ""
+                    },
+                    {
+                        "id": "pair_fa06bd99a92d4421859fe60b4f13fdbf",
+                        "name": "config.awsgateway_compatible",
+                        "value": "true",
+                        "description": ""
                     }
                 ]
             },
@@ -391,6 +397,12 @@
                         "id": "pair_471e2b0c0e434310ba5be7c02859a7c7",
                         "name": "config.function_name",
                         "value": "",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_fa06bd99a92d4421859fe60b4f13fdbf",
+                        "name": "config.awsgateway_compatible",
+                        "value": "true",
                         "description": ""
                     }
                 ]
