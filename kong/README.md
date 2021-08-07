@@ -164,7 +164,7 @@
     </p>
     </details>
 
-8. For ``Authentication Bearer`` token, We are still need to construct this ``key`` into a encoded token. Please visit https://jwt.io/ and proceed as below:
+8. For ``Authentication Bearer`` token, We are still need to construct this ``key`` into an encoded token. Please visit https://jwt.io/ and proceed as below:
     [![JWT Construction](../misc/jwt-construction.png "JWT Construction")]()
     
     - Input your JWT algorithm into the header section.
