@@ -37,8 +37,8 @@ Resources:
         Type: Number
       TableName: kong-users-table
       Tags:
-        env: staging
-        owner: aaron
+        Environment: staging
+        Owner: aaron
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
