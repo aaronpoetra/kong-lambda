@@ -17,12 +17,28 @@ Resources:
       CodeUri: create-user/
       Handler: app.lambdaHandler
       Runtime: nodejs14.x
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref UserDynamoTable
   GetUsersFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       CodeUri: get-users/
       Handler: app.lambdaHandler
       Runtime: nodejs14.x
+      Policies:
+        - DynamoDBReadPolicy:
+            TableName: !Ref UserDynamoTable
+  UserDynamoTable:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      PrimaryKey:
+        Name: user_id
+        Type: Number
+      TableName: kong-users-table
+      Tags:
+        env: staging
+        owner: aaron
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
@@ -32,8 +48,11 @@ Outputs:
   #   Description: "API Gateway endpoint URL for Prod stage for Hello World function"
   #   Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/"
   CreateUserFunction:
-    Description: "Hello World Lambda Function ARN"
+    Description: "Lambda CreateUser Function ARN"
     Value: !GetAtt CreateUserFunction.Arn
   GetUsersFunction:
-    Description: "Hello World Lambda Function ARN"
+    Description: "Lambda GetUsers Function ARN"
     Value: !GetAtt GetUsersFunction.Arn
+  UsersDynamoTable:
+    Description: "DynamoDB Users Table ARN"
+    Value: !GetAtt UserDynamoTable.Arn

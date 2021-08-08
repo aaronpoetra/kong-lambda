@@ -128,5 +128,8 @@ $RECYCLE.BIN/
 # AWS SAM
 .aws-sam
 
+# Packaged-template
+packaged-*
+
 
 # End of https://www.gitignore.io/api/osx,node,linux,windows
